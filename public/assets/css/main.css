@@ -4,10 +4,10 @@
 /* Custom properties */
 :root{
     --light-color: #fff;
-    --light-color-alt: #afb6cd;
+    --light-color-alt: #131417;
     --primary-background-color: #000000;
-    --secondary-background-color: #131417;
-    --hover-light-color: var(--light-color);
+    --secondary-background-color: #239c9c;
+    --hover-light-color: var(--secondary-background-color);
     --hover-dark-color: var(--primary-background-color);
     --gradient-color: #239c9c;
     --transparent-light-color: rgba(255,255,255,.05);
