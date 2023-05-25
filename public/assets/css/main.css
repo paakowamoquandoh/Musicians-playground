@@ -88,6 +88,14 @@ body.light-theme{
     padding: 0 1.5rem;
 }
 
+.viewBtn{
+    border: 1px solid teal;
+    border-radius: 4px;
+    padding: 4px 8px;
+    background-color: teal;
+    color: white;
+}
+
 .place-items-center{
     display: inline-flex;
     align-items: center;
