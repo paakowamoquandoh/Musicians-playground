@@ -135,14 +135,6 @@ i{
     background-size: cover;
 }
 
-.title{
-    color: var(--light-color);
-}
-
-.article-title{
-    font-size: var(--font-size-md);
-}
-
 
 /*  */
 .bioSection{
@@ -216,6 +208,27 @@ i{
 .article-data-container{
     margin-left: 5px;
     padding: 10px;
+}
+
+.songTitle{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.songIcons{
+    color: white;
+}
+
+.songIcons i{
+    font-size: 28px;
+}
+
+.preview{
+    background-color: rgb(175, 221, 241);
+    color: black;
+    padding: 2px 6px;
+    border-radius: 2px;
+    font-weight: bold;
 }
 
 .see-more-container{
