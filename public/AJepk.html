@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css"/>
     <!-- Custom styles -->
     <link rel="stylesheet" href="./assets/css/epk.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -61,7 +62,7 @@
             <h1>Featured Tracks</h1>
 
             <div class="older-posts-grid-wrapper d-grid">
-                <a href="https://open.spotify.com/track/4R04IYdy36ot6oIvLaoCYN?si=2faa7bd55b7b4129" class="article d-grid">
+                <a class="article d-grid" href="https://open.spotify.com/track/4R04IYdy36ot6oIvLaoCYN?si=2faa7bd55b7b4129" class="article d-grid">
                     <div class="older-posts-article-image-wrapper">
                         <img src="./assets/images/play-button.png" alt="" class="article-image">
                     </div>
@@ -215,16 +216,13 @@
             <li class="list-item">
                 <a  class="list-link"><i class="ri-twitter-fill"></i></a>
             </li>
-            <li class="list-item">
-                <a  class="list-link"><i class="ri-pinterest-fill"></i></a>
-            </li>
         </ul>
         </div>
 
 
         <div class="downloadPdf">
-            <button id="download-btn">download page </button>
-            <i class="ri-arrow-down-circle-line"></i>
+            <button id="download-btn">download page  <i class="ri-arrow-down-circle-line"></i></button>
+           
         </div>
 
 
@@ -244,30 +242,7 @@
     <!-- Swiper.js -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
-    <script>
-        // Function to generate the PDF
-        function generatePDF() {
-          // Create a new jsPDF instance
-          const doc = new jsPDF();
-      
-          // Get the HTML content to be converted to PDF
-          const htmlContent = document.querySelector('html');
-      
-          // Convert the HTML to PDF
-          doc.html(htmlContent, {
-            callback: function (pdf) {
-              // Save the PDF file
-              pdf.save('downloaded.pdf');
-            },
-          });
-        }
-      
-        // Add click event listener to the download button
-        const downloadButton = document.getElementById('download-btn');
-        downloadButton.addEventListener('click', generatePDF);
-      </script>
     <!-- Custom script -->
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/AJepk.js"></script>
 </body>
 </html>
