@@ -290,6 +290,27 @@ i{
     transform: scale(1.05);
 }
 
+/* download */
+.downloadPdf{
+    margin: 4rem 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.downloadPdf button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: tan;
+    color: #131417;
+    text-transform: capitalize;
+}
+
+.downloadPdf button:hover{
+    background: crimson;
+    color: white;
+}
+
 /* Footer */
 .footer{
     background-color: var(--secondary-background-color);

@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AJ NELSON EPK</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/artistes/PhotographAJ Nelson.jpeg">
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="">
     <!-- Remix icons -->
@@ -221,6 +222,11 @@
         </div>
 
 
+        <div class="downloadPdf">
+            <button id="download-btn">download page <i class="ri-arrow-down-circle-line"></i></button>
+        </div>
+
+
     <!-- Footer -->
     <footer class="footer section">
 
@@ -237,7 +243,29 @@
     <!-- Swiper.js -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+    <script>
+        // Function to generate the PDF
+        function generatePDF() {
+          // Create a new jsPDF instance
+          const doc = new jsPDF();
+      
+          // Get the HTML content to be converted to PDF
+          const htmlContent = document.querySelector('html');
+      
+          // Convert the HTML to PDF
+          doc.html(htmlContent, {
+            callback: function (pdf) {
+              // Save the PDF file
+              pdf.save('downloaded.pdf');
+            },
+          });
+        }
+      
+        // Add click event listener to the download button
+        const downloadButton = document.getElementById('download-btn');
+        downloadButton.addEventListener('click', generatePDF);
+      </script>
     <!-- Custom script -->
     <script src="./assets/js/main.js"></script>
 </body>
