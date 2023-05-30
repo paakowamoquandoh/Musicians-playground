@@ -1,7 +1,8 @@
+const doc = new jsPDF();
  // Function to generate the PDF
  function generatePDF() {
     // Create a new jsPDF instance
-    const doc = new jsPDF();
+   
 
     // Get the HTML content to be converted to PDF
     const htmlContent = document.querySelector('html');
