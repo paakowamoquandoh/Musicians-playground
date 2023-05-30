@@ -90,11 +90,3 @@
 // });
 
 // Get all the buttons with the class "viewBtn"
-const buttons = document.querySelector("#AJviewBtn");
-
-// Attach event listener to each button
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    window.open("AJepk.html", "_blank");
-  });
-});
