@@ -175,6 +175,7 @@ body.light-theme {
 .btn:hover,
 .btn:hover span {
   color: teal;
+  cursor: pointer;
 }
 
 .moon-icon {
