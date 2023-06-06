@@ -335,21 +335,9 @@ body.light-theme {
   z-index: 5;
 }
 
-.fancy-border span {
-  position: relative;
-  z-index: 10;
-  display: inline-flex;
-  background-color: var(--secondary-background-color);
-  padding: 0.6rem 1.5rem;
-}
-
 .article {
   position: relative;
   min-height: var(--item-min-height-md);
-}
-
-.popular-tags-container .article {
-  height: 32rem;
 }
 
 .article-image {
@@ -566,8 +554,16 @@ body.light-theme {
   gap: var(--gap);
 }
 
+.popular-tags-container .article span {
+  text-transform: uppercase;
+}
+
 .popular-tags-container .article {
-  min-height: var(--item-min-height-sm);
+  height: 33rem;
+}
+
+.popular-tags-container .article-image {
+  opacity: 0.2;
 }
 
 .tag-name {
