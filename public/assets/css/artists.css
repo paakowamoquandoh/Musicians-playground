@@ -11,7 +11,7 @@
   --secondary-background-color: #239c9c;
   --hover-light-color: var(--secondary-background-color);
   --hover-dark-color: var(--primary-background-color);
-  --gradient-color: #135252;
+  --gradient-color: #ce740e;
   --transparent-light-color: rgba(9, 233, 184, 0.05);
   --transparent-dark-color: rgba(0, 0, 0, 0.75);
   --font-family: "Poppins", sans-serif;
@@ -175,7 +175,7 @@ body.light-theme {
   right: 1.5rem;
   width: 23rem;
   padding: 1.5rem;
-  background-color: rgb(128, 167, 167);
+  background-color: teal;
   opacity: 0;
   transform: scale(0);
   transition: opacity 0.25s ease-in;
