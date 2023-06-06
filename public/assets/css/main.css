@@ -459,6 +459,12 @@ body.light-theme {
 }
 
 /* Quick read */
+
+.quick-read .container {
+  max-width: 98vw;
+  margin-top: 2.2rem;
+  background-color: white;
+}
 .section-title {
   position: relative;
   font-size: var(--font-size-md);
@@ -476,7 +482,7 @@ body.light-theme {
 }
 
 .article.swiper-slide {
-  height: 40rem;
+  height: 80vh;
 }
 
 /* Quick read - Swiper */
