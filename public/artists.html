@@ -68,13 +68,21 @@
             <i class="ri-facebook-circle-fill"></i>
           </button>
 
-          <button
-            class="btn place-items-center screen-lg-hidden menu-toggle-icon"
+          <div
+            style="display: none"
+            class="icon-box place-items-center"
+            id="search-icon"
+          >
+            <i class="ri-search-line"></i>
+          </div>
+
+          <div
+            class="icon-box place-items-center screen-lg-hidden menu-toggle-icon"
             id="menu-toggle-icon"
           >
             <i class="ri-menu-3-line open-menu-icon"></i>
             <i class="ri-close-line close-menu-icon"></i>
-          </button>
+          </div>
         </div>
       </nav>
     </header>
@@ -90,23 +98,25 @@
 
     <!-- Search -->
     <div class="search-form-container container" id="search-form-container">
-      <div class="form-container-inner">
+      <div class="form-container">
         <form action="" class="form">
           <input
             class="form-input"
             type="text"
             placeholder="What are you looking for?"
           />
-          <button class="btn form-btn" type="submit">
+          <button class="btn form-btn icon-box" type="submit">
             <i class="ri-search-line"></i>
           </button>
         </form>
         <span class="form-note">Or press ESC to close.</span>
       </div>
-
-      <button class="btn form-close-btn place-items-center" id="form-close-btn">
+      <div
+        class="btn form-close-btn icon-box place-items-center"
+        id="form-close-btn"
+      >
         <i class="ri-close-line"></i>
-      </button>
+      </div>
     </div>
 
     <!-- Quick read -->
@@ -411,6 +421,7 @@
     <!-- Swiper.js -->
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <!-- Custom script -->
+    <script src="./assets/js/main.js"></script>
     <script src="./assets/js/mgmt.js"></script>
   </body>
 </html>
