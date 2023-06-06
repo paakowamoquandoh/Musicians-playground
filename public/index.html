@@ -124,7 +124,7 @@
             <!-- Slides -->
             <a href="#" class="article swiper-slide">
               <img
-                src="./assets/images/artistes/Screenshot 2023-04-25 at 10.23.12 AM.png"
+                src="./assets/images/artistes/3music.jpg"
                 alt=""
                 class="article-image"
               />
@@ -315,5 +315,53 @@
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <!-- Custom script -->
     <script src="./assets/js/main.js"></script>
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js";
+
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        slidesPreview: 1,
+        spaceBetween: 10,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          280: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          510: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          758: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+          },
+          900: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

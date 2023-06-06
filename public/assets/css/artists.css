@@ -159,6 +159,11 @@ body.light-theme {
   text-transform: uppercase;
 }
 
+.second ul li:hover {
+  cursor: pointer;
+  color: rgb(211, 144, 157);
+}
+
 .logo {
   font-size: var(--font-size-md);
   color: var(--primary-background-color);
@@ -496,6 +501,11 @@ body.light-theme {
 }
 
 /* Quick read */
+
+.quick-read .container {
+  max-width: 180rem;
+  margin-top: 8rem;
+}
 .section-title {
   position: relative;
   font-size: var(--font-size-md);
@@ -513,7 +523,7 @@ body.light-theme {
 }
 
 .article.swiper-slide {
-  height: 40rem;
+  height: 50rem;
 }
 
 /* Quick read - Swiper */

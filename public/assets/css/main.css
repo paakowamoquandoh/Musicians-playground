@@ -82,6 +82,7 @@ body.light-theme {
   --transparent-light-color: rgba(0, 0, 0, 0.1);
 }
 /* Reusable classes */
+
 .container {
   max-width: 160rem;
   margin: 0 auto;
@@ -464,6 +465,8 @@ body.light-theme {
   max-width: 98vw;
   margin-top: 2.2rem;
   background-color: white;
+  max-height: 110vh;
+  height: 87vh;
 }
 .section-title {
   position: relative;
@@ -482,9 +485,12 @@ body.light-theme {
 }
 
 .article.swiper-slide {
-  height: 80vh;
+  height: 85vh;
+  padding: 10px 0px;
 }
-
+.article.swiper-slide img {
+  object-fit: cover;
+}
 /* Quick read - Swiper */
 .swiper-wrapper {
   height: auto;
